@@ -16,14 +16,14 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(``)
-    .setImage(`https://media.discordapp.net/attachments/848815969233403934/850660018532777984/emoji_17.gif `)
+    .setImage(`https://cdn.discordapp.com/emojis/855373265790959646.gif`)
     .setTitle(`CAlms is One`)
     .setDescription(`
 <a:emoji_17:850611627321327617> OWNER BOT <@767108799785598977> <a:emoji_1:848805449155215391>
 <a:emoji_16:850611586921398283>
 <:g_:850633528697159710> [GITHUP](https://github.com/dev-REDZONE)
 <a:emoji_16:850611586921398283>
-[SERVER SUPPORT](https://discord.gg/jokerstaff)
+[SERVER SUPPORT](https://discord.gg/vWKsHCNQce)
 <a:emoji_16:850611586921398283>
 [SPONCAR SERVER](https://discord.gg/jokerstaff)
 <a:emoji_16:850611586921398283>

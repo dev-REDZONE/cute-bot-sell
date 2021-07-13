@@ -6,7 +6,7 @@ const db = require('quick.db');
 const { TOKEN, PREFIX, AVATARURL, BOTNAME, } = require(`./config.json`);
 const figlet = require("figlet");
 const client = new Client({ disableMentions: `` , partials: ['MESSAGE', 'CHANNEL', 'REACTION'] });
-client.login('ODI4OTIxNDYzMzQ4MjY0OTgy.YGwnRQ.NHpVypgUB0cUrelMRFKF-CXVm1c');
+client.login('ODI4OTIxNDYzMzQ4MjY0OTgy.YGwnRQ.2oaDz6c7XxvB-rOQwBU6lyk26Vs');
 client.commands = new Collection();
 client.setMaxListeners(0);
 client.prefix = PREFIX;
@@ -144,12 +144,12 @@ client.on("message", message => {
   if (message.channel.type === "dm") {
     if (message.content.startsWith("https://discord.gg/")) {  
 message.author.send(`**تـۆش ریکلام بۆ ئـەم سێرڤـەرە بکە **  
-https://discord.gg/HYdBCmQXzV`); 
+https://discord.gg/jokerstaff`); 
  
  
  
  
-      client.channels.cache.get("862372446888001558").send(
+      client.channels.cache.get("833013122523856896").send(
  
         `>  send by <@${message.author.id}> 
 ${message.content}`
@@ -1860,7 +1860,7 @@ ${client.commands.size}
     .setDescription(`
 
 ** <a:s_:849928845750698004> Developers Bot**
- <@743887896481628190>
+ <@767108799785598977>
 
 ** <a:emoji_31:851033224293384203>ping bot**
 ${client.ws.ping}
@@ -1937,7 +1937,7 @@ ${process.version}
 
 });
  client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("862372481340014612");
+  let channel = client.channels.cache.get("861001166582448139");
   let embed = new MessageEmbed().setColor("#ff0000")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
@@ -1950,7 +1950,7 @@ ${process.version}
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("862372480415825940");
+  let channel = client.channels.cache.get("861001166582448139");
   let embed = new MessageEmbed()
   .setColor("RANDOM")
   .setAuthor(client.user.username, client.user.avatarURL())

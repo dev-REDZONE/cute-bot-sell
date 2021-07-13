@@ -1204,7 +1204,7 @@ if (message.content.startsWith(PREFIX + 'listEmoji')) {
 }})
 
 client.on('message',  (message) => {
-        if(message.content.startsWith('+hug')) {
+        if(message.content.startsWith('=hug')) {
   let user = message.mentions.users.first() 
   if (!user) return message.reply('mention someone to Hug')
  
@@ -1421,7 +1421,7 @@ client.on("message", message => {
 });
 
 client.on('message',  (message) => {
-        if(message.content.startsWith('+slap')) {
+        if(message.content.startsWith('=slap')) {
   let user = message.mentions.users.first();
   if (!user) return message.reply('mention someone to Slap')
   let slaps = [
@@ -1444,7 +1444,7 @@ message.channel.send(embed)
         }})
 
 client.on('message',  (message) => {
-        if(message.content.startsWith('+kiss')) {
+        if(message.content.startsWith('=kiss')) {
   let user = message.mentions.users.first();
   if (!user) return message.reply('mention someone to Kiss')
   var kiss = [

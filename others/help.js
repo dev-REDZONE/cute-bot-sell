@@ -11,13 +11,13 @@ module.exports = {
   name: "help",
   aliases: ["h"],
   cooldown: 8,
-  description: "**all commands Pinky**",
+  description: "**all commands Calms,Bot**",
   execute(message) {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(``)
-    .setImage(`https://media.discordapp.net/attachments/848454202514079764/854642997894971392/image0.gif `)
+    .setImage(``)
     .setTitle(`Calms Is One`)
     .setDescription(`
 *** | Prefix bot*** 
@@ -67,7 +67,7 @@ shuffle ・ search ・remove
 queue ・ filter ・ radio・loob
 
 **Links**
-[SUPPORT](https://discord.gg/BCHan3ZxZr)       [INVITE](https://discord.com/api/oauth2/authorize?client_id=828921463348264982&permissions=8&scope=bot) [  website  ](https://calms-web-site.glitch.me/)
+[SUPPORT](https://discord.gg/jokerstaff)       [INVITE](https://discord.com/api/oauth2/authorize?client_id=828921463348264982&permissions=2184576832&scope=bot)
 `)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))

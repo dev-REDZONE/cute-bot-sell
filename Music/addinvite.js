@@ -10,7 +10,7 @@ module.exports = {
   name: "support",
   aliases: ["supp"],
   cooldown: 8,
-  description: "** Invite pore bot**",
+  description: "** Invite Calms bot**",
   execute(message) {
     let commands = message.client.commands.array();
 
@@ -19,9 +19,9 @@ module.exports = {
     .setImage(`https://media.discordapp.net/attachments/848121416696070164/848210376364654602/image0.gif`)
     .setTitle(`CAlms is One`)
     .setDescription(`
-<a:emoji_1:848805449155215391>[  SUPPORT  ](https://discord.gg/mAp4pC7VAv) <a:emoji_20:850624420102930444>
+<a:emoji_1:848805449155215391>[  SUPPORT  ](https://discord.gg/jokerstaff) <a:emoji_20:850624420102930444>
 <a:emoji_16:850611586921398283>
-<a:emoji_1:848805449155215391>[  INVITE  ](https://discord.com/oauth2/authorize?client_id=828921463348264982&permissions=70282305&scope=bot) <a:emoji_20:850624420102930444>
+<a:emoji_1:848805449155215391>[  INVITE  ](https://discord.com/api/oauth2/authorize?client_id=828921463348264982&permissions=2184576832&scope=bot) <a:emoji_20:850624420102930444>
 <a:emoji_16:850611586921398283> `)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))

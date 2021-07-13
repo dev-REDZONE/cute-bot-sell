@@ -1,17 +1,25 @@
-const Discord = require('discord.js');
-module.exports = {
-    name: "say",
-    description: "Says a Message",
-    async execute(message, args){
-     if(message.author.id !== '861001166582448139') return message.channel.send('You aren\'t allowed to run this command.') 
-        var say = args.slice(0).join(" ");
-                if (!args[0]) {
-                    return message.channel.send('Please include what you want me to say.')
-                }
-                await message.delete();
-                message.channel.send(say);
-            }
-        }
-    
-
-  
+client.on("message", message => {
+  let commands = message.content.split(" ");
+  if (commands[0] == prefix + "say") {
+    if (!message.guild) return;
+    if (!message.guild.member(message.author).hasPermission("MANAGE_MESSAGES"))
+      return message.reply("**You Dont Have `MANAGE_MESSAGES` Permission .**");
+    if (!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES"))
+      return message.reply(
+        "Please Check My Role Permission To `MANAGE_MESSAGES`"
+      );
+    var args = message.content
+      .split(" ")
+      .slice(1)
+      .join(" ");
+    if (!args) {
+      return message.channel.send("`Usage : " + prefix + "say <message>`");
+    }
+    message.delete();
+    var embed = new Discord.MessageEmbed()
+      .setColor("RANDOM")
+      .setDescription(`${args}`)
+      .setFooter(`By ${message.author.tag}`);
+    message.channel.send(embed);
+  }
+})

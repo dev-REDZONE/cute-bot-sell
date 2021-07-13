@@ -25,14 +25,11 @@ module.exports = {
 
 *** | User Commands***
 
-
  invite ・ support(supp)・ uptime ・ prefix
  ping ・ invites・avatar ・ se
  ・user
 
  ***|Mod commnads***
-
-
 
  lock ・ unlock ban ・ unban
  clear・kick ・channelinfo
@@ -43,12 +40,14 @@ hightRole ・ rooms ・
 
 ***| Gif Commands***
 
-boy gif ・ love gif・girl gif ・ sad gif・meme 
+boy gif ・ love gif・girl gif ・ sad gif
 
 ***  | Game gif Commands***
 
-
 boom ・ rps ・slots
+
+*** | Fun Commands
+kiss ・ slap ・ meme ・ hug
 
 *** | Game Commands***
 

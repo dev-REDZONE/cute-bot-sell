@@ -21,7 +21,7 @@ module.exports = {
     .setTitle(`Calms Is One`)
     .setDescription(`
 *** | Prefix bot*** 
-***__+__***
+***__=__***
 
 *** | User Commands***
 

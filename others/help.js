@@ -17,7 +17,7 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(``)
-    .setImage(``)
+    .setImage(`https://media.discordapp.net/attachments/861001166582448139/864930027442274304/standard.gif`)
     .setTitle(`Calms Is One`)
     .setDescription(`
 *** | Prefix bot*** 

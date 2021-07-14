@@ -21,13 +21,13 @@ module.exports = {
     .setDescription(`
 <a:emoji_17:850611627321327617> OWNER BOT <@767108799785598977> <a:emoji_1:848805449155215391>
 <a:emoji_16:850611586921398283>
-<:g_:850633528697159710> [GITHUP](https://github.com/dev-REDZONE)
+<:g_:850633528697159710> [GitHub](https://github.com/dev-REDZONE)
 <a:emoji_16:850611586921398283>
-[SERVER SUPPORT](https://discord.gg/vWKsHCNQce)
+[Server Support](https://discord.gg/vWKsHCNQce)
 <a:emoji_16:850611586921398283>
-[SPONCAR SERVER](https://discord.gg/jokerstaff)
+[Sponcar Server](https://discord.gg/jokerstaff)
 <a:emoji_16:850611586921398283>
-[INVITEBOT](https://discord.com/api/oauth2/authorize?client_id=828921463348264982&permissions=2184576832&scope=bot)`)
+[Invite Bot](https://discord.com/api/oauth2/authorize?client_id=828921463348264982&permissions=2184576832&scope=bot)`)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM")

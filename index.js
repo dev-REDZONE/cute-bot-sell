@@ -34,6 +34,17 @@ client.on("message", message => {
       "https://media.discordapp.net/attachments/786897044483604490/804760463044640808/ALANIS_MAN_GIF_99.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870704999202836/ENES_ACAR_GIF_104.gif",
       "https://media.discordapp.net/attachments/786897044483604490/803870737941135421/ENES_ACAR_GIF_15.gif"  
+      "https://media.discordapp.net/attachments/608711476219478045/864891998191878174/Tiamin_Man_Gif_120.gif"
+      "https://media.discordapp.net/attachments/608711476219478045/864891964641902602/yuzmaske.gif"            
+      "https://media.discordapp.net/attachments/608711476219478045/864883217664704532/lisamangifs_14.gif"          
+      "https://media.discordapp.net/attachments/608711476219478045/864882450701090847/saaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.gif"
+      "https://media.discordapp.net/attachments/608711476219478045/864876834713894922/image0.gif"
+      "https://media.discordapp.net/attachments/608711476219478045/864875475661881364/a_25e99596187313741dbd1923e349fc06.gif"
+      "https://media.discordapp.net/attachments/608711476219478045/864813558746054666/image0.gif"
+      "https://images-ext-2.discordapp.net/external/QgHXgR_Pdpc-7qCIcE-WpnkKFbGI95ShIdZM-S500lo/https/media.discordapp.net/attachments/786897044483604490/804760463044640808/ALANIS_MAN_GIF_99.gif"
+      "https://images-ext-2.discordapp.net/external/ENwIxM8tQ_yB3BuDBcRMwOXS7eOoUTsOtRA5mg55DVM/https/media.discordapp.net/attachments/786897044483604490/803870769313480714/Enes_Acar_GIF_70.gif"
+      "https://images-ext-2.discordapp.net/external/U2cNgUt-Oswu0JzLzB6M5DnRMBCVuuBZobG0iEXuaRc/https/media.discordapp.net/attachments/786897044483604490/804315371271749662/image0-20.gif"
+	    
     ];
 
     message.channel

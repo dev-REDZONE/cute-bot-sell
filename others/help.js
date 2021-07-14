@@ -26,8 +26,8 @@ module.exports = {
 *** | User Commands***
 
  invite ・ support(supp)・ uptime ・ prefix
- ping ・ invites・avatar ・ se
- ・user
+ ping ・ invites・avatar ・ se ・ server
+ user ・ about ・ status ・ qsay
 
  ***|Mod commnads***
 

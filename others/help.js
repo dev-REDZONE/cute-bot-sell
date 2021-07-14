@@ -40,7 +40,7 @@ hightRole ・ rooms ・
 
 ***| Gif Commands***
 
-boy gif ・ love gif・girl gif ・ sad gif
+boy gif ・ love gif・girl gif
 
 ***  | Game gif Commands***
 

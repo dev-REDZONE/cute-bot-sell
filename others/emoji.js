@@ -10,7 +10,7 @@ module.exports = {
   name: "emoji",
   aliases: ["e"],
   cooldown: 8,
-  description: "**all commands Pinky**",
+  description: "**all commands Calms**",
   execute(message) {
     let commands = message.client.commands.array();
 

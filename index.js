@@ -660,7 +660,7 @@ client.on("message", message => {
 });
 
 client.on("message", async message => {
-  if (message.content.startsWith(PREFIX + "settopic")) {
+  if (message.content.startsWith(PREFIX + "qsay")) {
     if (!message.member.hasPermission("ADMINISTRATOR"))
       return message.channel.send(
         "**You need Administrator permission to use this command!**"

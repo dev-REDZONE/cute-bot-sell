@@ -618,7 +618,7 @@ client.on('message', msg => {
 
   
   client.on("message", message => {
-  if (message.content === PREFIX + "open") {
+  if (message.content === PREFIX + "1") {
     if (!message.channel.guild) return;
     if (!message.member.hasPermission("MANAGE_CHANNELS"))
       return message.reply("You dont have Perms `MANAGE CHANNELS`:x:");
@@ -639,7 +639,7 @@ client.on('message', msg => {
 });
 
 client.on("message", message => {
-  if (message.content === PREFIX + "close") {
+  if (message.content === PREFIX + "2") {
     if (!message.channel.guild) return;
     if (!message.member.hasPermission("MANAGE_CHANNELS"))
       return message.reply("You Dont Have Perms `MANAGE CHANNELS` :x:");
@@ -677,7 +677,7 @@ client.on("message", async message => {
       .addField("Channel", message.channel.name)
       .addField("By", message.author.tag)
       .setColor("RANDOM")
-      .setFooter("BY BLACK JACK");
+      .setFooter("Calms,Bot");
     message.channel.send(embed);
   }
 });

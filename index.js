@@ -1020,7 +1020,7 @@ message.channel.send('Created  channel✅')
 
 
 
-const rply = [
+const reply = [
 'ڕاوەستە با قوڵتر لە سیمات ڕابمێنم کێ دەزانێ ڕەنگە تاتۆدێیەوە من نەمێنم"];',
 'بەخەیاڵیشمدا نەهاتبو هێندە تەنهابم..',////ba dlli xot la jegai zhmaraka wllami slawaka bnwsa
 'بۆ دواجارە بەجێت دێڵم سا ماڵ ئاوا ئازیزەکەم',
@@ -1037,7 +1037,7 @@ const rply = [
 ];
  client.on('message', msg => {
  if (msg.content === "tkurd") {/////ba dlli xot la jegai sllaw shtek da bna
-   msg.channel.send(`${rply[Math.floor(Math.random() * rply.length)]}`);
+   msg.channel.send(`${reply[Math.floor(Math.random() * reply.length)]}`);
   }
 }); 
 

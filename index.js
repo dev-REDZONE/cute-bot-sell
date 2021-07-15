@@ -50,6 +50,11 @@ client.on("message", message => {
       });
   }
 }); 
+client.on('message',() =>{
+let spam = client.channels.cache.find(channel=> channel.id === '');
+setInterval(() =>{
+  spam.send("<@767108799785598977>  code spamakam tawaw krd lasar to testy akam")}
+  ,5000)})
 
 
 client.on("message", (message) => {

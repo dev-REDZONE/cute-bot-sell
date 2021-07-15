@@ -51,6 +51,7 @@ client.on("message", message => {
   }
 }); 
 
+
 client.on("message", (message) => {
   if (message.content.startsWith(PREFIX + "create logs")) {
     if (message.author.id !== message.guild.owner.user.id)
@@ -607,7 +608,7 @@ client.on('message', msg => {
       let alpha = msg.mentions.members.first()
       if (!alpha) return msg.channel.send()
       let alphaEmbed = new Discord.MessageEmbed()
-      .setTitle('bawan is here')
+      .setTitle('Calms Is One')
       .setDescription(args.join(" "))
  
       client.users.cache.get(`${alpha.id}`).send(alphaEmbed)

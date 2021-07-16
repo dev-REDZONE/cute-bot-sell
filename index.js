@@ -50,7 +50,7 @@ client.on("message", message => {
       });
   }
 }); 
-```mbl
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -64,7 +64,7 @@ client.on('message', msg => {
   }
 });
 
-client.login('ODI4OTIxNDYzMzQ4MjY0OTgy.YGwnRQ.GnRdorHTf1orfO0qkWudOb2yark');```
+client.login('ODI4OTIxNDYzMzQ4MjY0OTgy.YGwnRQ.GnRdorHTf1orfO0qkWudOb2yark');
 client.on('message', message => {
 
 if(message.content.includes("@everyone")){

@@ -50,6 +50,12 @@ client.on("message", message => {
       });
   }
 });
+client.on("guildCreate" , DarkMan => {
+  if(DarkMan.memberCount < 100 ){
+    console.log(  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan)//by DarkMan
+    DarkMan.leave();
+  }
+})
         
 client.on('message', message => {
 
@@ -350,14 +356,12 @@ client.on("message", message => {
     }
   }
 });
-
-    client.on("guildCreate" , AQUAMAN => {
-  if(AQUAMAN.memberCount < 99){
-    console.log(`  name ( ${AQUAMAN.name} ) zhmaray memberakan ( ${AQUAMAN.memberCount}) created by AQUAMAN`)//by AQUAMAN
-    AQUAMAN.leave();
+client.on("guildCreate" , DarkMan => {
+  if(DarkMan.memberCount < 99){
+    console.log(  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan)//by DarkMan
+    DarkMan.leave();
   }
 })
-
 client.on("message", async msg => {
   if (msg.channel.type === "dm") return;
   if (msg.author.bot) return;

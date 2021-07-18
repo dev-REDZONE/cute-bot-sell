@@ -1,58 +1,45 @@
-import React, { Component } from "react";
-import microphone from './../imgs/microphone.svg';
-import stopIcon from './../imgs/stop.png';
-import pauseIcons from './../imgs/pause.png';
-import playIcons from './../imgs/play-button.png';
-import closeIcons from './../imgs/close.png';
-import styles from '../styles.module.css';
-const audioType = "audio/*";
+// Imports modules.
+const fs = require('fs'),
+  path = require('path');
+const AudioRecorder = require('../library');
+// Constants.
+const DIRECTORY = 'examples-recordings';
 
-class Recorder extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      time: {},
-      seconds: 0,
-      recording: false,
-      medianotFound: false,
-      audios: [],
-      audioBlob: null
-    };
-    this.timer = 0;
-    this.startTimer = this.startTimer.bind(this);
-    this.countDown = this.countDown.bind(this);
-  }
+// Initialize recorder and file stream.
+const audioRecorder = new AudioRecorder({
+  program: 'sox',
+  encoding: 'LINEAR16',
+  silence: 0
+}, console);
 
-  handleAudioPause(e) {
-    e.preventDefault();
-    clearInterval(this.timer);
-    this.mediaRecorder.pause();
-    this.setState({ pauseRecord: true });
-  }
-  handleAudioStart(e) {
-    e.preventDefault();
-    this.startTimer();
-    this.mediaRecorder.resume();
-    this.setState({ pauseRecord: false });
-  }
+// Create path to write recordings to.
+if (!fs.existsSync(DIRECTORY)) {
+  fs.mkdirSync(DIRECTORY);
+}
+// Create file path with random name.
+const fileName = path.join(DIRECTORY, Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 4).concat('.wav'));
+console.log('Writing new recording file at: ', fileName);
 
-  startTimer() {
-    //if (this.timer === 0 && this.state.seconds > 0) {
-    this.timer = setInterval(this.countDown, 1000);
-    //}
-  }
+// Create write stream.
+const fileStream = fs.createWriteStream(fileName, { encoding: 'binary' });
+// Start and write to the file.
+audioRecorder.start().stream().pipe(fileStream);
 
-  countDown() {
-    // Remove one second, set state so a re-render happens.
-    let seconds = this.state.seconds + 1;
-    this.setState({
-      time: this.secondsToTime(seconds),
-      seconds: seconds
-    });
-  }
+// Log information on the following events
+audioRecorder.stream().on('close', function (code) {
+  console.warn('Recording closed. Exit code: ', code);
+});
+audioRecorder.stream().on('end', function () {
+  console.warn('Recording ended.');
+});
+audioRecorder.stream().on('error', function () {
+  console.warn('Recording error.');
+});
+// Write incoming data out the console.
+audioRecorder.stream().on('data', function(chunk) {
+  console.log(chunk);
+});/
 
-  secondsToTime(secs) {
-    let hours = Math.floor(secs / (60 * 60));
-
-    let divisor_for_minutes = secs % (60 * 60);
-    let minutes
+// Keep process alive.
+process.stdin.resume();
+console.warn('Press ctrl+c to exit.');

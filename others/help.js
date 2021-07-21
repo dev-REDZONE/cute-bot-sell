@@ -65,11 +65,9 @@ queue ・ filter ・ radio・loop
 **Links**
 [SUPPORT](https://discord.gg/jokerstaff)       [INVITE](https://discord.com/api/oauth2/authorize?client_id=828921463348264982&permissions=2184576832&scope=bot)
 Top.gg Links
-[Website] (https://top.gg/bot/828921463348264982)- [Vote] (https://top.gg/bot/828921463348264982/vote)
-`)
-    Top.gg Links
       [Website] (https://top.gg/bot/828921463348264982)- [Vote] (https://top.gg/bot/828921463348264982/vote)
 
+`)
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("#ff0000")
    message.react("<:2_:863362568801222656>")

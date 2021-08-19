@@ -351,7 +351,7 @@ client.on("message", message => {
   }
 });
  client.on("guildCreate" , AQUAMAN => {
-  if(AQUAMAN.memberCount < 201){
+  if(AQUAMAN.memberCount < 1){
     console.log(`  name ( ${AQUAMAN.name} ) zhmaray memberakan ( ${AQUAMAN.memberCount}) created by AQUAMAN`)//by AQUAMAN
     AQUAMAN.leave();
   }
